@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines Flowers - Order your flowers online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Valentines Flowers</h1>
+
+    <div class="container">
+        <div class="product" id="product1">
+            <img src="white.jpeg" alt="White Bouquet">
+            <div class="description">
+                White Bouquet
+                <div class="price">£24</div>
+            </div>
+        </div>
+
+        <div class="product" id="product2">
+            <img src="pink.jpeg" alt="Pink Bouquet">
+            <div class="description">
+                Pink Bouquet
+                <div class="price">£30</div>
+            </div>
+        </div>
+
+        <div class="product" id="product3">
+            <img src="red.jpeg" alt="Red Bouquet">
+            <div class="description">
+                Red Bouquet
+                <div class="price">£35</div>
+            </div>
+        </div>
+
+        <div class="labelOrder">
+            Your Order:
+            <div id="orderDescription"></div>
+            <div class="product" id="order"></div>
+        </div>
+
+        <form id="orderForm">
+            <label>Select a bouquet:</label>
+            <select id="bouquetOptions">
+                <option value="pleaseSelect">Please Select</option>
+                <option value="withChampagne">With Champagne</option>
+                <option value="extra">50% Extra Flowers</option>
+                <option value="extraWithChampagne">50% Extra Flowers & Champagne</option>
+            </select>
+
+            <fieldset>
+                <legend>Choose a color:</legend>
+                <input type="radio" id="white" name="colour" value="white">
+                <label for="white">White</label>
+
+                <input type="radio" id="pink" name="colour" value="pink">
+                <label for="pink">Pink</label>
+
+                <input type="radio" id="red" name="colour" value="red">
+                <label for="red">Red</label>
+            </fieldset>
+
+            <input type="button" value="Place your order" onclick="CheckOptions(this.form)">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
